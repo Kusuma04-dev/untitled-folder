@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_E0014F44-D220-4A31-853B-53C1A5FC3463" id="_0B5DB3EB-CCB9-4928-A28B-967DDC261FF1" name="DMN_99F89B70-C845-4081-9681-7CB900402679" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_E0014F44-D220-4A31-853B-53C1A5FC3463" id="_0B5DB3EB-CCB9-4928-A28B-967DDC261FF1" name="DMN_99F89B70-C845-4081-9681-7CB900402679">
   <decision name="New Decision" id="_A243EFAA-1F67-4332-B0EC-9B029F461B4E">
     <variable name="New Decision" id="_40F21051-938E-4647-BB19-97EDBCFB0FC6" />
     <informationRequirement id="_D901C2F5-AA07-4410-8DC3-0EBD41BFA957">
       <requiredInput href="#_A98A3DFC-D681-4E52-B475-E437A8908370" />
     </informationRequirement>
+    <literalExpression id="_F6CCFF11-4976-4DBF-A7A3-5186693353D7" label="New Decision">
+      <text>4</text>
+    </literalExpression>
   </decision>
   <inputData name="New Input Data" id="_A98A3DFC-D681-4E52-B475-E437A8908370">
-    <variable name="New Input Data" id="_E7E6FE23-F617-464D-B8C2-DA479DBADD7D" />
+    <variable name="New Input Data" id="_E7E6FE23-F617-464D-B8C2-DA479DBADD7D" typeRef="Any" />
   </inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_21E78ECC-CEE6-442A-826C-A0635C30340B" name="Default DRD" useAlternativeInputDataShape="false">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths />
+          <kie:ComponentWidths dmnElementRef="_F6CCFF11-4976-4DBF-A7A3-5186693353D7">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="_59EC6620-BB42-4570-BA6C-016504A1C226" dmnElementRef="_A243EFAA-1F67-4332-B0EC-9B029F461B4E" isCollapsed="false" isListedInputData="false">
